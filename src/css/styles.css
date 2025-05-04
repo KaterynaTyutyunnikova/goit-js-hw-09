@@ -1,18 +1,108 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #fff;
+  }
+  img {
+    display: block;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+   width: 1440px;
+height: 696px;
+list-style: none;
+  }
+  
+  .gallery-image{
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+    width: 360px;
+    height: 200px;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  .feedback-form{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 16px;
+background: #f9f6f6;
+border-radius: 8px;
+padding: 24px;
+width: 408px;
+height: 296px;
+  }
+
+ input{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+ }
+ textarea{
+ 
+border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 80px;
+ }
+label{
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 8px;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+ button{
+ 
+border-radius: 8px;
+padding: 8px 16px;
+width: 95px;
+height: 40px;
+cursor: pointer;
+background: #4e75ff;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+border: none;
+ }
+ .autofocus :hover{
+  border: 1px solid #000;
+ }
+  button:hover {
+    background: #6c8cff;
+  }
